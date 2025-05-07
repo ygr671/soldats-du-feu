@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace prjSoldatsDuFeu
 {
     public partial class frmTableauDeBord : Form
     {
+        SQLiteConnection cx = Connexion.Connec;
+
         public frmTableauDeBord()
         {
             InitializeComponent();
@@ -21,5 +24,6 @@ namespace prjSoldatsDuFeu
         {
 
         }
+
     }
 }
