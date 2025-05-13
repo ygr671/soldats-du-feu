@@ -12,3 +12,16 @@ C:\Users\m.erdal\source\repos\prjSoldatsDuFeu\prjSoldatsDuFeu\obj\Debug\prjSolda
 C:\Users\m.erdal\source\repos\prjSoldatsDuFeu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.csproj.CopyComplete
 C:\Users\m.erdal\source\repos\prjSoldatsDuFeu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.exe
 C:\Users\m.erdal\source\repos\prjSoldatsDuFeu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.pdb
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\prjSoldatsDuFeu.exe.config
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\prjSoldatsDuFeu.exe
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\prjSoldatsDuFeu.pdb
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\System.Data.SQLite.dll
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\System.Data.SQLite.xml
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.csproj.AssemblyReference.cache
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmTableauDeBord.resources
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.Properties.Resources.resources
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.csproj.GenerateResource.cache
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.csproj.CoreCompileInputs.cache
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSolda.266C87DC.Up2Date
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.exe
+C:\Users\Muzu\Source\Repos\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.pdb

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ImagedBox;
 
 namespace prjSoldatsDuFeu
 {
@@ -57,8 +58,16 @@ namespace prjSoldatsDuFeu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
+        private void imageButton1_Load(object sender, EventArgs e)
+        {
+            //imageButton1.File_name = "start.jpg";
+        }
+
+        private void pbQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
