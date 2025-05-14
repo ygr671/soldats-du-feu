@@ -28,14 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTableauDeBord));
             this.imageButton1 = new ImagedBox.ImageButton();
-            this.ibTableauDeBord = new ImagedBox.ImageButton();
-            this.ibNouvelleMission = new ImagedBox.ImageButton();
-            this.ibGestionDesEngins = new ImagedBox.ImageButton();
-            this.ibGestionDuPersonnel = new ImagedBox.ImageButton();
-            this.ibStatistiques = new ImagedBox.ImageButton();
+            this.pbTableauDeBord = new System.Windows.Forms.PictureBox();
+            this.pnlBoutonsNavigation = new System.Windows.Forms.Panel();
             this.pbQuitter = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTableauDeBord)).BeginInit();
+            this.pnlBoutonsNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbQuitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // imageButton1
@@ -50,105 +56,98 @@
             this.imageButton1.Size = new System.Drawing.Size(498, 116);
             this.imageButton1.TabIndex = 0;
             // 
-            // ibTableauDeBord
+            // pbTableauDeBord
             // 
-            this.ibTableauDeBord.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ibTableauDeBord.FileName = "start.png";
-            this.ibTableauDeBord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibTableauDeBord.LabelText = "Tableau de bord";
-            this.ibTableauDeBord.Location = new System.Drawing.Point(14, 13);
-            this.ibTableauDeBord.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ibTableauDeBord.Name = "ibTableauDeBord";
-            this.ibTableauDeBord.Size = new System.Drawing.Size(420, 116);
-            this.ibTableauDeBord.TabIndex = 0;
+            this.pbTableauDeBord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbTableauDeBord.Location = new System.Drawing.Point(4, 3);
+            this.pbTableauDeBord.Name = "pbTableauDeBord";
+            this.pbTableauDeBord.Size = new System.Drawing.Size(60, 60);
+            this.pbTableauDeBord.TabIndex = 6;
+            this.pbTableauDeBord.TabStop = false;
+            this.pbTableauDeBord.Click += new System.EventHandler(this.pbTableauDeBord_Click);
             // 
-            // ibNouvelleMission
+            // pnlBoutonsNavigation
             // 
-            this.ibNouvelleMission.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ibNouvelleMission.FileName = "start.png";
-            this.ibNouvelleMission.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibNouvelleMission.LabelText = "Nouvelle mission";
-            this.ibNouvelleMission.Location = new System.Drawing.Point(14, 137);
-            this.ibNouvelleMission.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ibNouvelleMission.Name = "ibNouvelleMission";
-            this.ibNouvelleMission.Size = new System.Drawing.Size(420, 116);
-            this.ibNouvelleMission.TabIndex = 1;
-            // 
-            // ibGestionDesEngins
-            // 
-            this.ibGestionDesEngins.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ibGestionDesEngins.FileName = "start.png";
-            this.ibGestionDesEngins.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibGestionDesEngins.LabelText = "Gestion des engins";
-            this.ibGestionDesEngins.Location = new System.Drawing.Point(14, 261);
-            this.ibGestionDesEngins.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ibGestionDesEngins.Name = "ibGestionDesEngins";
-            this.ibGestionDesEngins.Size = new System.Drawing.Size(420, 116);
-            this.ibGestionDesEngins.TabIndex = 2;
-            // 
-            // ibGestionDuPersonnel
-            // 
-            this.ibGestionDuPersonnel.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ibGestionDuPersonnel.FileName = "start.png";
-            this.ibGestionDuPersonnel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibGestionDuPersonnel.LabelText = "Gestion du personnel";
-            this.ibGestionDuPersonnel.Location = new System.Drawing.Point(14, 385);
-            this.ibGestionDuPersonnel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ibGestionDuPersonnel.Name = "ibGestionDuPersonnel";
-            this.ibGestionDuPersonnel.Size = new System.Drawing.Size(420, 116);
-            this.ibGestionDuPersonnel.TabIndex = 3;
-            // 
-            // ibStatistiques
-            // 
-            this.ibStatistiques.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ibStatistiques.FileName = "start.png";
-            this.ibStatistiques.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibStatistiques.LabelText = "Statistiques";
-            this.ibStatistiques.Location = new System.Drawing.Point(14, 509);
-            this.ibStatistiques.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ibStatistiques.Name = "ibStatistiques";
-            this.ibStatistiques.Size = new System.Drawing.Size(420, 116);
-            this.ibStatistiques.TabIndex = 4;
+            this.pnlBoutonsNavigation.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlBoutonsNavigation.Controls.Add(this.pbQuitter);
+            this.pnlBoutonsNavigation.Controls.Add(this.pictureBox3);
+            this.pnlBoutonsNavigation.Controls.Add(this.pictureBox2);
+            this.pnlBoutonsNavigation.Controls.Add(this.pictureBox1);
+            this.pnlBoutonsNavigation.Controls.Add(this.pbTableauDeBord);
+            this.pnlBoutonsNavigation.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlBoutonsNavigation.Location = new System.Drawing.Point(0, 0);
+            this.pnlBoutonsNavigation.Name = "pnlBoutonsNavigation";
+            this.pnlBoutonsNavigation.Size = new System.Drawing.Size(69, 692);
+            this.pnlBoutonsNavigation.TabIndex = 7;
             // 
             // pbQuitter
             // 
-            this.pbQuitter.ImageLocation = "exit.png";
-            this.pbQuitter.Location = new System.Drawing.Point(1088, 12);
+            this.pbQuitter.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pbQuitter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbQuitter.BackgroundImage")));
+            this.pbQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbQuitter.Location = new System.Drawing.Point(4, 629);
             this.pbQuitter.Name = "pbQuitter";
-            this.pbQuitter.Size = new System.Drawing.Size(100, 70);
-            this.pbQuitter.TabIndex = 5;
+            this.pbQuitter.Size = new System.Drawing.Size(60, 60);
+            this.pbQuitter.TabIndex = 8;
             this.pbQuitter.TabStop = false;
             this.pbQuitter.Click += new System.EventHandler(this.pbQuitter_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox3.Location = new System.Drawing.Point(4, 201);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.Location = new System.Drawing.Point(4, 135);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 69);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmTableauDeBord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
-            this.Controls.Add(this.pbQuitter);
-            this.Controls.Add(this.ibStatistiques);
-            this.Controls.Add(this.ibGestionDuPersonnel);
-            this.Controls.Add(this.ibGestionDesEngins);
-            this.Controls.Add(this.ibNouvelleMission);
-            this.Controls.Add(this.ibTableauDeBord);
+            this.Controls.Add(this.pnlBoutonsNavigation);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmTableauDeBord";
             this.Text = "Soldats du feu";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbTableauDeBord)).EndInit();
+            this.pnlBoutonsNavigation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbQuitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private ImagedBox.ImageButton imageButton1;
-        private ImagedBox.ImageButton ibTableauDeBord;
-        private ImagedBox.ImageButton ibNouvelleMission;
-        private ImagedBox.ImageButton ibGestionDesEngins;
-        private ImagedBox.ImageButton ibGestionDuPersonnel;
-        private ImagedBox.ImageButton ibStatistiques;
+        private System.Windows.Forms.PictureBox pbTableauDeBord;
+        private System.Windows.Forms.Panel pnlBoutonsNavigation;
         private System.Windows.Forms.PictureBox pbQuitter;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

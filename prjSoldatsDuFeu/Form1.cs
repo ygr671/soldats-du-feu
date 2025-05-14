@@ -65,6 +65,11 @@ namespace prjSoldatsDuFeu
             //imageButton1.File_name = "start.jpg";
         }
 
+        private void pbTableauDeBord_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pbQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
