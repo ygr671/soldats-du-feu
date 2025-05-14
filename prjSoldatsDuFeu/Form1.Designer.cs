@@ -36,12 +36,15 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlTableauDeBord = new System.Windows.Forms.Panel();
+            this.lblTitre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbTableauDeBord)).BeginInit();
             this.pnlBoutonsNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbQuitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlTableauDeBord.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageButton1
@@ -59,6 +62,7 @@
             // pbTableauDeBord
             // 
             this.pbTableauDeBord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbTableauDeBord.Image = ((System.Drawing.Image)(resources.GetObject("pbTableauDeBord.Image")));
             this.pbTableauDeBord.Location = new System.Drawing.Point(4, 3);
             this.pbTableauDeBord.Name = "pbTableauDeBord";
             this.pbTableauDeBord.Size = new System.Drawing.Size(60, 60);
@@ -119,11 +123,31 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // pnlTableauDeBord
+            // 
+            this.pnlTableauDeBord.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlTableauDeBord.Controls.Add(this.lblTitre);
+            this.pnlTableauDeBord.Location = new System.Drawing.Point(75, 12);
+            this.pnlTableauDeBord.Name = "pnlTableauDeBord";
+            this.pnlTableauDeBord.Size = new System.Drawing.Size(1113, 668);
+            this.pnlTableauDeBord.TabIndex = 8;
+            // 
+            // lblTitre
+            // 
+            this.lblTitre.AutoSize = true;
+            this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.Location = new System.Drawing.Point(470, 11);
+            this.lblTitre.Name = "lblTitre";
+            this.lblTitre.Size = new System.Drawing.Size(192, 29);
+            this.lblTitre.TabIndex = 0;
+            this.lblTitre.Text = "Tableau de bord";
+            // 
             // frmTableauDeBord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.pnlTableauDeBord);
             this.Controls.Add(this.pnlBoutonsNavigation);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -136,6 +160,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlTableauDeBord.ResumeLayout(false);
+            this.pnlTableauDeBord.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -148,6 +174,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlTableauDeBord;
+        private System.Windows.Forms.Label lblTitre;
     }
 }
 
