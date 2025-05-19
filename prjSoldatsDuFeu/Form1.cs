@@ -58,6 +58,10 @@ namespace prjSoldatsDuFeu
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Instancier les UC mission ici
+            Mission m = new Mission();
+            m.Location = new Point(20,20);
+            pnlTableauDeBord.Controls.Add(m);
         }
 
         private void imageButton1_Load(object sender, EventArgs e)
