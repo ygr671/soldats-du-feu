@@ -38,4 +38,3 @@ C:\Users\m.erdal\Source\Repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\pr
 C:\Users\m.erdal\Source\Repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSolda.266C87DC.Up2Date
 C:\Users\m.erdal\Source\Repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.exe
 C:\Users\m.erdal\Source\Repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.pdb
-C:\Users\m.erdal\Source\Repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.Mission.resources

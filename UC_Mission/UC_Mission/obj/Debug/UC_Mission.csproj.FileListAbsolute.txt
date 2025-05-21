@@ -1,0 +1,9 @@
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\bin\Debug\UC_Mission.dll
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\bin\Debug\UC_Mission.pdb
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\obj\Debug\UC_Mission.csproj.AssemblyReference.cache
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\obj\Debug\UC_Mission.Properties.Resources.resources
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\obj\Debug\UC_Mission.csproj.GenerateResource.cache
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\obj\Debug\UC_Mission.csproj.CoreCompileInputs.cache
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\obj\Debug\UC_Mission.dll
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\obj\Debug\UC_Mission.pdb
+C:\Users\m.erdal\source\repos\UC_Mission\UC_Mission\obj\Debug\UC_Mission.Mission.resources

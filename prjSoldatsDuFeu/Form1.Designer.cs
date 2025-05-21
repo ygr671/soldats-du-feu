@@ -37,9 +37,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTableauDeBord = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpnlTDB = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTitre = new System.Windows.Forms.Label();
-            this.mission1 = new UC_Mission.Mission();
             ((System.ComponentModel.ISupportInitialize)(this.pbTableauDeBord)).BeginInit();
             this.pnlBoutonsNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbQuitter)).BeginInit();
@@ -128,20 +127,20 @@
             // pnlTableauDeBord
             // 
             this.pnlTableauDeBord.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlTableauDeBord.Controls.Add(this.mission1);
-            this.pnlTableauDeBord.Controls.Add(this.flowLayoutPanel1);
+            this.pnlTableauDeBord.Controls.Add(this.flpnlTDB);
             this.pnlTableauDeBord.Controls.Add(this.lblTitre);
             this.pnlTableauDeBord.Location = new System.Drawing.Point(75, 12);
             this.pnlTableauDeBord.Name = "pnlTableauDeBord";
             this.pnlTableauDeBord.Size = new System.Drawing.Size(1113, 668);
             this.pnlTableauDeBord.TabIndex = 8;
             // 
-            // flowLayoutPanel1
+            // flpnlTDB
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 43);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.flpnlTDB.AutoScroll = true;
+            this.flpnlTDB.Location = new System.Drawing.Point(3, 48);
+            this.flpnlTDB.Name = "flpnlTDB";
+            this.flpnlTDB.Size = new System.Drawing.Size(1107, 617);
+            this.flpnlTDB.TabIndex = 1;
             // 
             // lblTitre
             // 
@@ -152,16 +151,6 @@
             this.lblTitre.Size = new System.Drawing.Size(192, 29);
             this.lblTitre.TabIndex = 0;
             this.lblTitre.Text = "Tableau de bord";
-            // 
-            // mission1
-            // 
-            this.mission1.AutoSize = true;
-            this.mission1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mission1.Location = new System.Drawing.Point(119, 151);
-            this.mission1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mission1.Name = "mission1";
-            this.mission1.Size = new System.Drawing.Size(750, 140);
-            this.mission1.TabIndex = 2;
             // 
             // frmTableauDeBord
             // 
@@ -175,6 +164,7 @@
             this.Name = "frmTableauDeBord";
             this.Text = "Soldats du feu";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Resize += new System.EventHandler(this.frmTableauDeBord_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pbTableauDeBord)).EndInit();
             this.pnlBoutonsNavigation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbQuitter)).EndInit();
@@ -197,8 +187,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlTableauDeBord;
         private System.Windows.Forms.Label lblTitre;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private UC_Mission.Mission mission1;
+        private System.Windows.Forms.FlowLayoutPanel flpnlTDB;
     }
 }
 
