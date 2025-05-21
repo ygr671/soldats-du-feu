@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTableauDeBord));
-            this.imageButton1 = new ImagedBox.ImageButton();
             this.pbTableauDeBord = new System.Windows.Forms.PictureBox();
             this.pnlBoutonsNavigation = new System.Windows.Forms.Panel();
             this.pbQuitter = new System.Windows.Forms.PictureBox();
@@ -37,6 +36,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTableauDeBord = new System.Windows.Forms.Panel();
+            this.chkEnCours = new System.Windows.Forms.CheckBox();
             this.flpnlTDB = new System.Windows.Forms.FlowLayoutPanel();
             this.lblTitre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbTableauDeBord)).BeginInit();
@@ -47,18 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlTableauDeBord.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // imageButton1
-            // 
-            this.imageButton1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.imageButton1.FileName = null;
-            this.imageButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.imageButton1.LabelText = "label1";
-            this.imageButton1.Location = new System.Drawing.Point(14, 13);
-            this.imageButton1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.imageButton1.Name = "imageButton1";
-            this.imageButton1.Size = new System.Drawing.Size(498, 116);
-            this.imageButton1.TabIndex = 0;
             // 
             // pbTableauDeBord
             // 
@@ -127,12 +115,24 @@
             // pnlTableauDeBord
             // 
             this.pnlTableauDeBord.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlTableauDeBord.Controls.Add(this.chkEnCours);
             this.pnlTableauDeBord.Controls.Add(this.flpnlTDB);
             this.pnlTableauDeBord.Controls.Add(this.lblTitre);
             this.pnlTableauDeBord.Location = new System.Drawing.Point(75, 12);
             this.pnlTableauDeBord.Name = "pnlTableauDeBord";
             this.pnlTableauDeBord.Size = new System.Drawing.Size(1113, 668);
             this.pnlTableauDeBord.TabIndex = 8;
+            // 
+            // chkEnCours
+            // 
+            this.chkEnCours.AutoSize = true;
+            this.chkEnCours.Location = new System.Drawing.Point(42, 18);
+            this.chkEnCours.Name = "chkEnCours";
+            this.chkEnCours.Size = new System.Drawing.Size(133, 33);
+            this.chkEnCours.TabIndex = 2;
+            this.chkEnCours.Text = "En cours";
+            this.chkEnCours.UseVisualStyleBackColor = true;
+            this.chkEnCours.CheckedChanged += new System.EventHandler(this.chkEnCours_CheckedChanged);
             // 
             // flpnlTDB
             // 
@@ -148,13 +148,13 @@
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitre.Location = new System.Drawing.Point(470, 11);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(192, 29);
+            this.lblTitre.Size = new System.Drawing.Size(279, 40);
             this.lblTitre.TabIndex = 0;
             this.lblTitre.Text = "Tableau de bord";
             // 
             // frmTableauDeBord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.pnlTableauDeBord);
@@ -178,7 +178,6 @@
         }
 
         #endregion
-        private ImagedBox.ImageButton imageButton1;
         private System.Windows.Forms.PictureBox pbTableauDeBord;
         private System.Windows.Forms.Panel pnlBoutonsNavigation;
         private System.Windows.Forms.PictureBox pbQuitter;
@@ -188,6 +187,7 @@
         private System.Windows.Forms.Panel pnlTableauDeBord;
         private System.Windows.Forms.Label lblTitre;
         private System.Windows.Forms.FlowLayoutPanel flpnlTDB;
+        private System.Windows.Forms.CheckBox chkEnCours;
     }
 }
 

@@ -86,7 +86,7 @@
             this.lblMotifAppel.AutoSize = true;
             this.lblMotifAppel.Location = new System.Drawing.Point(375, 65);
             this.lblMotifAppel.Name = "lblMotifAppel";
-            this.lblMotifAppel.Size = new System.Drawing.Size(32, 20);
+            this.lblMotifAppel.Size = new System.Drawing.Size(49, 29);
             this.lblMotifAppel.TabIndex = 5;
             this.lblMotifAppel.Text = "--> ";
             // 
@@ -95,7 +95,7 @@
             this.lblLNatureSinistre.AutoSize = true;
             this.lblLNatureSinistre.Location = new System.Drawing.Point(140, 65);
             this.lblLNatureSinistre.Name = "lblLNatureSinistre";
-            this.lblLNatureSinistre.Size = new System.Drawing.Size(28, 20);
+            this.lblLNatureSinistre.Size = new System.Drawing.Size(43, 29);
             this.lblLNatureSinistre.TabIndex = 4;
             this.lblLNatureSinistre.Text = "-->";
             // 
@@ -115,7 +115,7 @@
             this.lblCaserne.AutoSize = true;
             this.lblCaserne.Location = new System.Drawing.Point(375, 9);
             this.lblCaserne.Name = "lblCaserne";
-            this.lblCaserne.Size = new System.Drawing.Size(81, 20);
+            this.lblCaserne.Size = new System.Drawing.Size(122, 29);
             this.lblCaserne.TabIndex = 2;
             this.lblCaserne.Text = "Caserne : ";
             // 
@@ -124,7 +124,7 @@
             this.lblDateDebut.AutoSize = true;
             this.lblDateDebut.Location = new System.Drawing.Point(140, 9);
             this.lblDateDebut.Name = "lblDateDebut";
-            this.lblDateDebut.Size = new System.Drawing.Size(73, 20);
+            this.lblDateDebut.Size = new System.Drawing.Size(109, 29);
             this.lblDateDebut.TabIndex = 1;
             this.lblDateDebut.Text = "Début le ";
             // 
@@ -136,13 +136,13 @@
             this.lblID.Location = new System.Drawing.Point(4, 9);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(91, 20);
+            this.lblID.Size = new System.Drawing.Size(137, 29);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID Mission :";
             // 
             // Mission
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.Controls.Add(this.pnlMission);

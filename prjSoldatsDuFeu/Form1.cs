@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,8 +40,6 @@ namespace prjSoldatsDuFeu
 
                     liste += nomTable + "\n";
                 }
-
-                MessageBox.Show(liste + "\nNombre de tables chargées : " + ds.Tables.Count.ToString());
             }
             catch (SQLiteException err)
             {
@@ -48,6 +47,114 @@ namespace prjSoldatsDuFeu
             }
         }
 
+        public void RemplirMission()
+        {
+            int id_mission = -1;
+            int state_mission = -1;
+            string motif = "";
+            string date_debut = "";
+            string nature_sinistre = "";
+            string caserne = "";
+
+            if (chkEnCours.Checked)
+            {
+                foreach (DataRow dr in MesDatas.DsGlobal.Tables["Mission"].Rows)
+                {
+                    id_mission = Convert.ToInt32(dr["id"]);
+                    state_mission = Convert.ToInt32(dr["terminee"]);
+                    motif = dr["motifAppel"].ToString();
+                    string date_non_formatee = dr["dateHeureDepart"].ToString();
+
+                    // Formattage de la date
+                    DateTime date = DateTime.ParseExact(date_non_formatee, "yyyy-MM-dd HH:mm", System.Globalization.CultureInfo.InvariantCulture);
+                    date_debut = date.ToString("dd/MM/yyyy");
+
+
+                    string id_sinistre = dr["idNatureSinistre"].ToString();
+
+                    string id_caserne = dr["idCaserne"].ToString();
+
+                    DataRow[] nature_row = MesDatas.DsGlobal.Tables["NatureSinistre"].Select($"id = {id_sinistre}");
+                    DataRow[] caserne_row = MesDatas.DsGlobal.Tables["Caserne"].Select($"id = {id_caserne}");
+
+                    // Vérification si nature saisie
+                    if (nature_row.Length > 0)
+                    {
+                        nature_sinistre = nature_row[0]["libelle"].ToString();
+                    }
+                    else
+                    {
+                        nature_sinistre = "Pas de nature de sinistre spécifiée.";
+                    }
+
+                    // Vérification si caserne existe
+                    if (caserne_row.Length > 0)
+                    {
+                        caserne = caserne_row[0]["nom"].ToString();
+                    }
+                    else
+                    {
+                        caserne = "Pas de nature de caserne spécifiée.";
+                    }
+
+                    if (state_mission == 1)
+                    {
+                        Mission m = new Mission(id_mission, date_debut, caserne, nature_sinistre, motif);
+                        flpnlTDB.Controls.Add(m);
+                    }
+                }
+            }
+            else
+            {
+                foreach (DataRow dr in MesDatas.DsGlobal.Tables["Mission"].Rows)
+                {
+                    try
+                    {
+                        id_mission = Convert.ToInt32(dr["id"]);
+                        state_mission = Convert.ToInt32(dr["terminee"]);
+                        motif = dr["motifAppel"].ToString();
+                        string date_non_formatee = dr["dateHeureDepart"].ToString();
+
+                        // Formattage de la date
+                        DateTime date = DateTime.ParseExact(date_non_formatee, "yyyy-MM-dd HH:mm", System.Globalization.CultureInfo.InvariantCulture);
+                        date_debut = date.ToString("dd/MM/yyyy");
+
+                        string id_sinistre = dr["idNatureSinistre"].ToString();
+
+                        string id_caserne = dr["idCaserne"].ToString();
+
+                        DataRow[] nature_row = MesDatas.DsGlobal.Tables["NatureSinistre"].Select($"id = {id_sinistre}");
+                        DataRow[] caserne_row = MesDatas.DsGlobal.Tables["Caserne"].Select($"id = {id_caserne}");
+
+                        // Vérification si nature saisie
+                        if (nature_row.Length > 0)
+                        {
+                            nature_sinistre = nature_row[0]["libelle"].ToString();
+                        }
+                        else
+                        {
+                            nature_sinistre = "Pas de nature de sinistre spécifiée.";
+                        }
+
+                        // Vérification si caserne existe
+                        if (caserne_row.Length > 0)
+                        {
+                            caserne = caserne_row[0]["nom"].ToString();
+                        }
+                        else
+                        {
+                            caserne = "Pas de nature de caserne spécifiée.";
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Erreur : {ex.Message}");
+                    }
+                    Mission m = new Mission(id_mission, date_debut, caserne, nature_sinistre, motif);
+                    flpnlTDB.Controls.Add(m);
+                }
+            }
+        }
 
         public frmTableauDeBord()
         {
@@ -58,15 +165,8 @@ namespace prjSoldatsDuFeu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Mission(int id_mission, string date, string caserne, string sinistre, string motif)
-            // Instancier les UC mission ici
-
-            for (int i = 0; i < 10; i++)
-            {
-                // int id_mission = Convert.ToInt32(MesDatas.DsGlobal.Tables["Mission"].Rows[i]["id"]);
-                Mission m = new Mission(i, "Placeholder", "caserne", "sinistre", "motif");
-                flpnlTDB.Controls.Add(m);
-            }
+            FillDataSet(this.cx, MesDatas.DsGlobal);
+            RemplirMission();
         }
 
         private void imageButton1_Load(object sender, EventArgs e)
@@ -88,6 +188,12 @@ namespace prjSoldatsDuFeu
         {
             // TODO : METTRE UN TRUC POUR l'autoresize des Missions avec un accesseur sur sa taille et selon la taille du flowpanel
             // Le faire pour à peu près tout
+        }
+
+        private void chkEnCours_CheckedChanged(object sender, EventArgs e)
+        {
+            flpnlTDB.Controls.Clear(); // On vide le flow panel avant de le remplir à nouveau
+            RemplirMission();
         }
     }
 }
