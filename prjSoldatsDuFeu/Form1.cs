@@ -17,6 +17,11 @@ namespace prjSoldatsDuFeu
     {
         SQLiteConnection cx = Connexion.Connec;
 
+        public void AfficherDetailsMission(object sender, EventArgs e)
+        {
+            MessageBox.Show("KING KONG ça fonctionne");
+        }
+
         public void FillDataSet(SQLiteConnection cx, DataSet ds)
         {
             try
@@ -66,8 +71,7 @@ namespace prjSoldatsDuFeu
                     string date_non_formatee = dr["dateHeureDepart"].ToString();
 
                     // Formattage de la date
-                    DateTime date = DateTime.ParseExact(date_non_formatee, "yyyy-MM-dd HH:mm", System.Globalization.CultureInfo.InvariantCulture);
-                    date_debut = date.ToString("dd/MM/yyyy");
+                    date_debut = Convert.ToDateTime(date_non_formatee).ToString("dd/MM/yyyy 'à' HH:mm");
 
 
                     string id_sinistre = dr["idNatureSinistre"].ToString();
@@ -100,6 +104,7 @@ namespace prjSoldatsDuFeu
                     if (state_mission == 1)
                     {
                         Mission m = new Mission(id_mission, date_debut, caserne, nature_sinistre, motif);
+                        m.generateur = AfficherDetailsMission;
                         flpnlTDB.Controls.Add(m);
                     }
                 }
@@ -116,8 +121,7 @@ namespace prjSoldatsDuFeu
                         string date_non_formatee = dr["dateHeureDepart"].ToString();
 
                         // Formattage de la date
-                        DateTime date = DateTime.ParseExact(date_non_formatee, "yyyy-MM-dd HH:mm", System.Globalization.CultureInfo.InvariantCulture);
-                        date_debut = date.ToString("dd/MM/yyyy");
+                        date_debut = Convert.ToDateTime(date_non_formatee).ToString("dd/MM/yyyy 'à' HH:mm");
 
                         string id_sinistre = dr["idNatureSinistre"].ToString();
 
