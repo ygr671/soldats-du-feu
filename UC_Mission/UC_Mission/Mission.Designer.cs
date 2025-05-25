@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mission));
             this.pnlMission = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbGenererPDF = new System.Windows.Forms.PictureBox();
+            this.btnInfos = new System.Windows.Forms.Button();
+            this.btnGenererPDF = new System.Windows.Forms.Button();
             this.lblMotifAppel = new System.Windows.Forms.Label();
             this.lblLNatureSinistre = new System.Windows.Forms.Label();
             this.pbAlarme = new System.Windows.Forms.PictureBox();
@@ -39,15 +39,13 @@
             this.lblDateDebut = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.pnlMission.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGenererPDF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarme)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMission
             // 
-            this.pnlMission.Controls.Add(this.pictureBox2);
-            this.pnlMission.Controls.Add(this.pbGenererPDF);
+            this.pnlMission.Controls.Add(this.btnInfos);
+            this.pnlMission.Controls.Add(this.btnGenererPDF);
             this.pnlMission.Controls.Add(this.lblMotifAppel);
             this.pnlMission.Controls.Add(this.lblLNatureSinistre);
             this.pnlMission.Controls.Add(this.pbAlarme);
@@ -60,26 +58,27 @@
             this.pnlMission.Size = new System.Drawing.Size(742, 130);
             this.pnlMission.TabIndex = 0;
             // 
-            // pictureBox2
+            // btnInfos
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(689, 77);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.btnInfos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInfos.BackgroundImage")));
+            this.btnInfos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInfos.Location = new System.Drawing.Point(689, 77);
+            this.btnInfos.Name = "btnInfos";
+            this.btnInfos.Size = new System.Drawing.Size(50, 50);
+            this.btnInfos.TabIndex = 9;
+            this.btnInfos.UseVisualStyleBackColor = true;
+            this.btnInfos.Click += new System.EventHandler(this.btnInfos_Click);
             // 
-            // pbGenererPDF
+            // btnGenererPDF
             // 
-            this.pbGenererPDF.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pbGenererPDF.Image = ((System.Drawing.Image)(resources.GetObject("pbGenererPDF.Image")));
-            this.pbGenererPDF.Location = new System.Drawing.Point(689, 3);
-            this.pbGenererPDF.Name = "pbGenererPDF";
-            this.pbGenererPDF.Size = new System.Drawing.Size(50, 50);
-            this.pbGenererPDF.TabIndex = 6;
-            this.pbGenererPDF.TabStop = false;
-            this.pbGenererPDF.Click += new System.EventHandler(this.pbGenererPDF_Click);
+            this.btnGenererPDF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGenererPDF.BackgroundImage")));
+            this.btnGenererPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGenererPDF.Location = new System.Drawing.Point(689, 3);
+            this.btnGenererPDF.Name = "btnGenererPDF";
+            this.btnGenererPDF.Size = new System.Drawing.Size(50, 50);
+            this.btnGenererPDF.TabIndex = 8;
+            this.btnGenererPDF.UseVisualStyleBackColor = true;
+            this.btnGenererPDF.Click += new System.EventHandler(this.btnGenererPDF_Click);
             // 
             // lblMotifAppel
             // 
@@ -153,8 +152,6 @@
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.pnlMission.ResumeLayout(false);
             this.pnlMission.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGenererPDF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlarme)).EndInit();
             this.ResumeLayout(false);
 
@@ -169,7 +166,7 @@
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblMotifAppel;
         private System.Windows.Forms.Label lblLNatureSinistre;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pbGenererPDF;
+        private System.Windows.Forms.Button btnGenererPDF;
+        private System.Windows.Forms.Button btnInfos;
     }
 }

@@ -104,7 +104,7 @@ namespace prjSoldatsDuFeu
                     if (state_mission == 1)
                     {
                         Mission m = new Mission(id_mission, date_debut, caserne, nature_sinistre, motif);
-                        m.generateur = AfficherDetailsMission;
+                        m.afficherInformations = AfficherDetailsMission;
                         flpnlTDB.Controls.Add(m);
                     }
                 }
@@ -155,6 +155,7 @@ namespace prjSoldatsDuFeu
                         MessageBox.Show($"Erreur : {ex.Message}");
                     }
                     Mission m = new Mission(id_mission, date_debut, caserne, nature_sinistre, motif);
+                    m.afficherInformations = AfficherDetailsMission;
                     flpnlTDB.Controls.Add(m);
                 }
             }
@@ -173,20 +174,6 @@ namespace prjSoldatsDuFeu
             RemplirMission();
         }
 
-        private void imageButton1_Load(object sender, EventArgs e)
-        {
-            //imageButton1.File_name = "start.jpg";
-        }
-
-        private void pbTableauDeBord_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbQuitter_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void frmTableauDeBord_Resize(object sender, EventArgs e)
         {
@@ -198,6 +185,11 @@ namespace prjSoldatsDuFeu
         {
             flpnlTDB.Controls.Clear(); // On vide le flow panel avant de le remplir à nouveau
             RemplirMission();
+        }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

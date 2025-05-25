@@ -13,10 +13,13 @@ namespace UC_Mission
 {
     public partial class Mission: UserControl
     {
-        public delegate void genererPDF(object sender, EventArgs e);
-        
+        public delegate void GenererPDF(object sender, EventArgs e);
+        public delegate void AfficherInformations(object sender, EventArgs e);
+
+
         // L'instance du delegate
-        public genererPDF generateur;
+        public GenererPDF generateur;
+        public AfficherInformations afficherInformations;
 
         public Mission()
         {
@@ -38,11 +41,19 @@ namespace UC_Mission
 
         }
 
-        private void pbGenererPDF_Click(object sender, EventArgs e)
+        private void btnGenererPDF_Click(object sender, EventArgs e)
         {
             if (this.generateur != null)
             {
                 this.generateur(sender, e);
+            }
+        }
+
+        private void btnInfos_Click(object sender, EventArgs e)
+        {
+            if (this.afficherInformations != null)
+            {
+                this.afficherInformations(sender, e);
             }
         }
     }
