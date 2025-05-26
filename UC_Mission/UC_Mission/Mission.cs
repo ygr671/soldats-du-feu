@@ -21,19 +21,44 @@ namespace UC_Mission
         public GenererPDF generateur;
         public AfficherInformations afficherInformations;
 
+        // Variables pour les détails de mission
+        int id;
+        string dateDebut;
+        string dateFin;
+        string sinistre;
+        string motif;
+        string addresse;
+        string compte_rendu;
+        string caserne;
+        string[] pompiers_affectes; // TODO : peut-être faire une classe ici pour représenter un pompier mais à voir
+
+        public int Id { get => id; set => id = value; }
+        public string DateDebut { get => dateDebut; set => dateDebut = value; }
+        public string DateFin { get => dateFin; set => dateFin = value; }
+        public string Sinistre { get => sinistre; set => sinistre = value; }
+        public string Motif { get => motif; set => motif = value; }
+        public string Addresse { get => addresse; set => addresse = value; }
+        public string Compte_rendu { get => compte_rendu; set => compte_rendu = value; }
+        public string Caserne { get => caserne; set => caserne = value; }
+
         public Mission()
         {
             InitializeComponent();
         }
 
-        public Mission(int id_mission, string date, string caserne, string sinistre, string motif)
+        public Mission(int id_mission, string date_debut_mission, string caserne_pompiers, string sinistre_mission, string motif_mission)
         {
             InitializeComponent();
             this.lblID.Text += id_mission;
-            this.lblDateDebut.Text += date;
-            this.lblCaserne.Text += caserne;
-            this.lblLNatureSinistre.Text += sinistre;
-            this.lblMotifAppel.Text += motif;
+            this.id = id_mission;
+            // Formattage de la date
+            this.lblDateDebut.Text += Convert.ToDateTime(date_debut_mission).ToString("dd/MM/yyyy 'à' HH:mm");
+            this.lblCaserne.Text += caserne_pompiers;
+            this.caserne = caserne_pompiers;
+            this.lblLNatureSinistre.Text += sinistre_mission;
+            this.sinistre = sinistre_mission;
+            this.lblMotifAppel.Text += motif_mission;
+            this.motif = motif_mission;
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -45,7 +70,7 @@ namespace UC_Mission
         {
             if (this.generateur != null)
             {
-                this.generateur(sender, e);
+                this.generateur(this, e); // Remplacement the sender par this pour passer le formulaire au lieu du bouton
             }
         }
 
@@ -53,7 +78,7 @@ namespace UC_Mission
         {
             if (this.afficherInformations != null)
             {
-                this.afficherInformations(sender, e);
+                this.afficherInformations(this, e); // Remplacement the sender par this pour passer le formulaire au lieu du bouton
             }
         }
     }

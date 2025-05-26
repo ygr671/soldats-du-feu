@@ -55,14 +55,14 @@
             this.pnlMission.Location = new System.Drawing.Point(4, 5);
             this.pnlMission.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlMission.Name = "pnlMission";
-            this.pnlMission.Size = new System.Drawing.Size(742, 130);
+            this.pnlMission.Size = new System.Drawing.Size(1066, 130);
             this.pnlMission.TabIndex = 0;
             // 
             // btnInfos
             // 
             this.btnInfos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInfos.BackgroundImage")));
             this.btnInfos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInfos.Location = new System.Drawing.Point(689, 77);
+            this.btnInfos.Location = new System.Drawing.Point(1013, 77);
             this.btnInfos.Name = "btnInfos";
             this.btnInfos.Size = new System.Drawing.Size(50, 50);
             this.btnInfos.TabIndex = 9;
@@ -73,7 +73,7 @@
             // 
             this.btnGenererPDF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGenererPDF.BackgroundImage")));
             this.btnGenererPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGenererPDF.Location = new System.Drawing.Point(689, 3);
+            this.btnGenererPDF.Location = new System.Drawing.Point(1013, 3);
             this.btnGenererPDF.Name = "btnGenererPDF";
             this.btnGenererPDF.Size = new System.Drawing.Size(50, 50);
             this.btnGenererPDF.TabIndex = 8;
@@ -83,9 +83,9 @@
             // lblMotifAppel
             // 
             this.lblMotifAppel.AutoSize = true;
-            this.lblMotifAppel.Location = new System.Drawing.Point(375, 65);
+            this.lblMotifAppel.Location = new System.Drawing.Point(492, 65);
             this.lblMotifAppel.Name = "lblMotifAppel";
-            this.lblMotifAppel.Size = new System.Drawing.Size(49, 29);
+            this.lblMotifAppel.Size = new System.Drawing.Size(32, 20);
             this.lblMotifAppel.TabIndex = 5;
             this.lblMotifAppel.Text = "--> ";
             // 
@@ -94,9 +94,9 @@
             this.lblLNatureSinistre.AutoSize = true;
             this.lblLNatureSinistre.Location = new System.Drawing.Point(140, 65);
             this.lblLNatureSinistre.Name = "lblLNatureSinistre";
-            this.lblLNatureSinistre.Size = new System.Drawing.Size(43, 29);
+            this.lblLNatureSinistre.Size = new System.Drawing.Size(32, 20);
             this.lblLNatureSinistre.TabIndex = 4;
-            this.lblLNatureSinistre.Text = "-->";
+            this.lblLNatureSinistre.Text = "--> ";
             // 
             // pbAlarme
             // 
@@ -112,9 +112,9 @@
             // lblCaserne
             // 
             this.lblCaserne.AutoSize = true;
-            this.lblCaserne.Location = new System.Drawing.Point(375, 9);
+            this.lblCaserne.Location = new System.Drawing.Point(492, 9);
             this.lblCaserne.Name = "lblCaserne";
-            this.lblCaserne.Size = new System.Drawing.Size(122, 29);
+            this.lblCaserne.Size = new System.Drawing.Size(81, 20);
             this.lblCaserne.TabIndex = 2;
             this.lblCaserne.Text = "Caserne : ";
             // 
@@ -123,7 +123,7 @@
             this.lblDateDebut.AutoSize = true;
             this.lblDateDebut.Location = new System.Drawing.Point(140, 9);
             this.lblDateDebut.Name = "lblDateDebut";
-            this.lblDateDebut.Size = new System.Drawing.Size(109, 29);
+            this.lblDateDebut.Size = new System.Drawing.Size(73, 20);
             this.lblDateDebut.TabIndex = 1;
             this.lblDateDebut.Text = "Début le ";
             // 
@@ -135,20 +135,21 @@
             this.lblID.Location = new System.Drawing.Point(4, 9);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(137, 29);
+            this.lblID.Size = new System.Drawing.Size(95, 20);
             this.lblID.TabIndex = 0;
-            this.lblID.Text = "ID Mission :";
+            this.lblID.Text = "ID Mission : ";
             // 
             // Mission
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.pnlMission);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Mission";
-            this.Size = new System.Drawing.Size(750, 140);
+            this.Size = new System.Drawing.Size(1074, 140);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.pnlMission.ResumeLayout(false);
             this.pnlMission.PerformLayout();

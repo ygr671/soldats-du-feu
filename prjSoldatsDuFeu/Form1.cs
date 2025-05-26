@@ -1,9 +1,13 @@
-﻿using System;
+﻿using iTextSharp.text.pdf;
+using iTextSharp.text;
+using Org.BouncyCastle.Asn1.IsisMtt.X509;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -19,8 +23,43 @@ namespace prjSoldatsDuFeu
 
         public void AfficherDetailsMission(object sender, EventArgs e)
         {
-            MessageBox.Show("KING KONG ça fonctionne");
+            Mission mission = (Mission)sender;
+            MessageBox.Show("Mission n°" + mission.Id);
         }
+
+        public void GenererPDF(object sender, EventArgs e)
+        {
+            Mission mission = (Mission)sender;
+
+            string path = @"rapports/" + mission.Id + ".pdf";
+            Document doc = new Document(PageSize.A4);
+            try
+            {
+                PdfWriter.GetInstance(doc, new FileStream(path, FileMode.Create));
+                doc.Open();
+
+                // Titre
+                Paragraph titre = new Paragraph($"Rapport de mission n° {mission.Id}", FontFactory.GetFont("Arial", 18));
+                titre.Alignment = Element.ALIGN_CENTER;
+                doc.Add(titre);
+                doc.Add(new Paragraph(" ")); // espace
+
+                // Détails
+                doc.Add(new Paragraph($"Date de début : a"));
+                doc.Add(new Paragraph($"Caserne : a"));
+                doc.Add(new Paragraph($"Nature du sinistre : a"));
+                doc.Add(new Paragraph($"Motif de l'appel : a"));
+
+                doc.Close();
+
+                MessageBox.Show("PDF généré avec succès !");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur lors de la génération du PDF : " + ex.Message);
+            }
+        }
+
 
         public void FillDataSet(SQLiteConnection cx, DataSet ds)
         {
@@ -57,7 +96,7 @@ namespace prjSoldatsDuFeu
             int id_mission = -1;
             int state_mission = -1;
             string motif = "";
-            string date_debut = "";
+            string date_non_formatee = "";
             string nature_sinistre = "";
             string caserne = "";
 
@@ -68,11 +107,7 @@ namespace prjSoldatsDuFeu
                     id_mission = Convert.ToInt32(dr["id"]);
                     state_mission = Convert.ToInt32(dr["terminee"]);
                     motif = dr["motifAppel"].ToString();
-                    string date_non_formatee = dr["dateHeureDepart"].ToString();
-
-                    // Formattage de la date
-                    date_debut = Convert.ToDateTime(date_non_formatee).ToString("dd/MM/yyyy 'à' HH:mm");
-
+                    date_non_formatee = dr["dateHeureDepart"].ToString();
 
                     string id_sinistre = dr["idNatureSinistre"].ToString();
 
@@ -103,8 +138,12 @@ namespace prjSoldatsDuFeu
 
                     if (state_mission == 1)
                     {
-                        Mission m = new Mission(id_mission, date_debut, caserne, nature_sinistre, motif);
+                        Mission m = new Mission(id_mission, date_non_formatee, caserne, nature_sinistre, motif);
+                        m.Tag = id_mission;
                         m.afficherInformations = AfficherDetailsMission;
+                        m.generateur = GenererPDF;
+                        m.Motif = motif;
+                        m.Sinistre = nature_sinistre;
                         flpnlTDB.Controls.Add(m);
                     }
                 }
@@ -118,10 +157,7 @@ namespace prjSoldatsDuFeu
                         id_mission = Convert.ToInt32(dr["id"]);
                         state_mission = Convert.ToInt32(dr["terminee"]);
                         motif = dr["motifAppel"].ToString();
-                        string date_non_formatee = dr["dateHeureDepart"].ToString();
-
-                        // Formattage de la date
-                        date_debut = Convert.ToDateTime(date_non_formatee).ToString("dd/MM/yyyy 'à' HH:mm");
+                        date_non_formatee = dr["dateHeureDepart"].ToString();
 
                         string id_sinistre = dr["idNatureSinistre"].ToString();
 
@@ -154,8 +190,10 @@ namespace prjSoldatsDuFeu
                     {
                         MessageBox.Show($"Erreur : {ex.Message}");
                     }
-                    Mission m = new Mission(id_mission, date_debut, caserne, nature_sinistre, motif);
+                    Mission m = new Mission(id_mission, date_non_formatee, caserne, nature_sinistre, motif);
+                    m.Tag = id_mission;
                     m.afficherInformations = AfficherDetailsMission;
+                    m.generateur = GenererPDF;
                     flpnlTDB.Controls.Add(m);
                 }
             }
