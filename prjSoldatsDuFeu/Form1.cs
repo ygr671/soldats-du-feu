@@ -229,5 +229,11 @@ namespace prjSoldatsDuFeu
         {
             Application.Exit();
         }
+
+        private void btnGestionEngins_Click(object sender, EventArgs e)
+        {
+            Form frmEngins = new frmEnginEnregistre();
+            frmEngins.ShowDialog();
+        }
     }
 }

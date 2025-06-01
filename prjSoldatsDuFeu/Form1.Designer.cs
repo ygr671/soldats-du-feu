@@ -32,7 +32,7 @@
             this.pnlBoutonsNavigation = new System.Windows.Forms.Panel();
             this.btnQuitter = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGestionEngins = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnTableauDeBord = new System.Windows.Forms.Button();
             this.pnlTableauDeBord = new System.Windows.Forms.Panel();
@@ -48,7 +48,7 @@
             this.pnlBoutonsNavigation.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.pnlBoutonsNavigation.Controls.Add(this.btnQuitter);
             this.pnlBoutonsNavigation.Controls.Add(this.button3);
-            this.pnlBoutonsNavigation.Controls.Add(this.button2);
+            this.pnlBoutonsNavigation.Controls.Add(this.btnGestionEngins);
             this.pnlBoutonsNavigation.Controls.Add(this.button1);
             this.pnlBoutonsNavigation.Controls.Add(this.btnTableauDeBord);
             this.pnlBoutonsNavigation.Dock = System.Windows.Forms.DockStyle.Left;
@@ -78,15 +78,16 @@
             this.button3.TabIndex = 12;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnGestionEngins
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(4, 135);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 60);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGestionEngins.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGestionEngins.BackgroundImage")));
+            this.btnGestionEngins.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGestionEngins.Location = new System.Drawing.Point(4, 135);
+            this.btnGestionEngins.Name = "btnGestionEngins";
+            this.btnGestionEngins.Size = new System.Drawing.Size(60, 60);
+            this.btnGestionEngins.TabIndex = 11;
+            this.btnGestionEngins.UseVisualStyleBackColor = true;
+            this.btnGestionEngins.Click += new System.EventHandler(this.btnGestionEngins_Click);
             // 
             // button1
             // 
@@ -124,7 +125,7 @@
             this.chkEnCours.AutoSize = true;
             this.chkEnCours.Location = new System.Drawing.Point(42, 18);
             this.chkEnCours.Name = "chkEnCours";
-            this.chkEnCours.Size = new System.Drawing.Size(91, 24);
+            this.chkEnCours.Size = new System.Drawing.Size(133, 33);
             this.chkEnCours.TabIndex = 2;
             this.chkEnCours.Text = "En cours";
             this.chkEnCours.UseVisualStyleBackColor = true;
@@ -144,13 +145,13 @@
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitre.Location = new System.Drawing.Point(470, 11);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(192, 29);
+            this.lblTitre.Size = new System.Drawing.Size(279, 40);
             this.lblTitre.TabIndex = 0;
             this.lblTitre.Text = "Tableau de bord";
             // 
             // frmTableauDeBord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.pnlTableauDeBord);
@@ -178,7 +179,7 @@
         private System.Windows.Forms.CheckBox chkEnCours;
         private System.Windows.Forms.Button btnTableauDeBord;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGestionEngins;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnQuitter;
     }
