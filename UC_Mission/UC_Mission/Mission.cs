@@ -15,11 +15,14 @@ namespace UC_Mission
     {
         public delegate void GenererPDF(object sender, EventArgs e);
         public delegate void AfficherInformations(object sender, EventArgs e);
+        public delegate void CloturerMission(object sender, EventArgs e);
+
 
 
         // L'instance du delegate
         public GenererPDF generateur;
         public AfficherInformations afficherInformations;
+        public CloturerMission cloturerMission;
 
         // Variables pour les détails de mission
         int id;
@@ -40,6 +43,8 @@ namespace UC_Mission
         public string Addresse { get => addresse; set => addresse = value; }
         public string Compte_rendu { get => compte_rendu; set => compte_rendu = value; }
         public string Caserne { get => caserne; set => caserne = value; }
+
+        public bool EtatBoutonCloture { get => btnCloturerMission.Visible; set => btnCloturerMission.Visible = value; }
 
         public Mission()
         {

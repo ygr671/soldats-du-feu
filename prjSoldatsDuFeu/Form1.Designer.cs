@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTableauDeBord));
             this.pnlBoutonsNavigation = new System.Windows.Forms.Panel();
+            this.btnStatistiques = new System.Windows.Forms.Button();
             this.btnQuitter = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnGestionEngins = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             // pnlBoutonsNavigation
             // 
             this.pnlBoutonsNavigation.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlBoutonsNavigation.Controls.Add(this.btnStatistiques);
             this.pnlBoutonsNavigation.Controls.Add(this.btnQuitter);
             this.pnlBoutonsNavigation.Controls.Add(this.button3);
             this.pnlBoutonsNavigation.Controls.Add(this.btnGestionEngins);
@@ -56,6 +58,18 @@
             this.pnlBoutonsNavigation.Name = "pnlBoutonsNavigation";
             this.pnlBoutonsNavigation.Size = new System.Drawing.Size(69, 692);
             this.pnlBoutonsNavigation.TabIndex = 7;
+            // 
+            // btnStatistiques
+            // 
+            this.btnStatistiques.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnStatistiques.BackgroundImage")));
+            this.btnStatistiques.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStatistiques.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStatistiques.Location = new System.Drawing.Point(4, 267);
+            this.btnStatistiques.Name = "btnStatistiques";
+            this.btnStatistiques.Size = new System.Drawing.Size(60, 60);
+            this.btnStatistiques.TabIndex = 14;
+            this.btnStatistiques.UseVisualStyleBackColor = true;
+            this.btnStatistiques.Click += new System.EventHandler(this.btnStatistiques_Click);
             // 
             // btnQuitter
             // 
@@ -72,6 +86,7 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Location = new System.Drawing.Point(4, 201);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(60, 60);
@@ -82,6 +97,7 @@
             // 
             this.btnGestionEngins.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGestionEngins.BackgroundImage")));
             this.btnGestionEngins.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGestionEngins.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGestionEngins.Location = new System.Drawing.Point(4, 135);
             this.btnGestionEngins.Name = "btnGestionEngins";
             this.btnGestionEngins.Size = new System.Drawing.Size(60, 60);
@@ -93,6 +109,7 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Location = new System.Drawing.Point(4, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 60);
@@ -103,6 +120,7 @@
             // 
             this.btnTableauDeBord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTableauDeBord.BackgroundImage")));
             this.btnTableauDeBord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTableauDeBord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTableauDeBord.Location = new System.Drawing.Point(4, 3);
             this.btnTableauDeBord.Name = "btnTableauDeBord";
             this.btnTableauDeBord.Size = new System.Drawing.Size(60, 60);
@@ -125,7 +143,7 @@
             this.chkEnCours.AutoSize = true;
             this.chkEnCours.Location = new System.Drawing.Point(42, 18);
             this.chkEnCours.Name = "chkEnCours";
-            this.chkEnCours.Size = new System.Drawing.Size(133, 33);
+            this.chkEnCours.Size = new System.Drawing.Size(91, 24);
             this.chkEnCours.TabIndex = 2;
             this.chkEnCours.Text = "En cours";
             this.chkEnCours.UseVisualStyleBackColor = true;
@@ -145,13 +163,13 @@
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitre.Location = new System.Drawing.Point(470, 11);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(279, 40);
+            this.lblTitre.Size = new System.Drawing.Size(192, 29);
             this.lblTitre.TabIndex = 0;
             this.lblTitre.Text = "Tableau de bord";
             // 
             // frmTableauDeBord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.pnlTableauDeBord);
@@ -182,6 +200,7 @@
         private System.Windows.Forms.Button btnGestionEngins;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnQuitter;
+        private System.Windows.Forms.Button btnStatistiques;
     }
 }
 

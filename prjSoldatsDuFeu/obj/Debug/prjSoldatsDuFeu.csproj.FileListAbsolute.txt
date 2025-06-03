@@ -128,3 +128,7 @@ C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\Syste
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.csproj.SuggestedBindingRedirects.cache
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.exe.config
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmEnginEnregistre.resources
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmEnginEnregistre.resources
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UC_Mission.dll
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UC_Mission.pdb
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmStatistiques.resources

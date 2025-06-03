@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mission));
             this.pnlMission = new System.Windows.Forms.Panel();
+            this.btnCloturerMission = new System.Windows.Forms.Button();
             this.btnInfos = new System.Windows.Forms.Button();
             this.btnGenererPDF = new System.Windows.Forms.Button();
             this.lblMotifAppel = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             // 
             // pnlMission
             // 
+            this.pnlMission.Controls.Add(this.btnCloturerMission);
             this.pnlMission.Controls.Add(this.btnInfos);
             this.pnlMission.Controls.Add(this.btnGenererPDF);
             this.pnlMission.Controls.Add(this.lblMotifAppel);
@@ -58,10 +60,22 @@
             this.pnlMission.Size = new System.Drawing.Size(1066, 130);
             this.pnlMission.TabIndex = 0;
             // 
+            // btnCloturerMission
+            // 
+            this.btnCloturerMission.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloturerMission.BackgroundImage")));
+            this.btnCloturerMission.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCloturerMission.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCloturerMission.Location = new System.Drawing.Point(83, 55);
+            this.btnCloturerMission.Name = "btnCloturerMission";
+            this.btnCloturerMission.Size = new System.Drawing.Size(30, 30);
+            this.btnCloturerMission.TabIndex = 10;
+            this.btnCloturerMission.UseVisualStyleBackColor = true;
+            // 
             // btnInfos
             // 
             this.btnInfos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInfos.BackgroundImage")));
             this.btnInfos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInfos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInfos.Location = new System.Drawing.Point(1013, 77);
             this.btnInfos.Name = "btnInfos";
             this.btnInfos.Size = new System.Drawing.Size(50, 50);
@@ -73,6 +87,7 @@
             // 
             this.btnGenererPDF.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGenererPDF.BackgroundImage")));
             this.btnGenererPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGenererPDF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGenererPDF.Location = new System.Drawing.Point(1013, 3);
             this.btnGenererPDF.Name = "btnGenererPDF";
             this.btnGenererPDF.Size = new System.Drawing.Size(50, 50);
@@ -83,18 +98,20 @@
             // lblMotifAppel
             // 
             this.lblMotifAppel.AutoSize = true;
+            this.lblMotifAppel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMotifAppel.Location = new System.Drawing.Point(492, 65);
             this.lblMotifAppel.Name = "lblMotifAppel";
-            this.lblMotifAppel.Size = new System.Drawing.Size(32, 20);
+            this.lblMotifAppel.Size = new System.Drawing.Size(36, 20);
             this.lblMotifAppel.TabIndex = 5;
             this.lblMotifAppel.Text = "--> ";
             // 
             // lblLNatureSinistre
             // 
             this.lblLNatureSinistre.AutoSize = true;
+            this.lblLNatureSinistre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLNatureSinistre.Location = new System.Drawing.Point(140, 65);
             this.lblLNatureSinistre.Name = "lblLNatureSinistre";
-            this.lblLNatureSinistre.Size = new System.Drawing.Size(32, 20);
+            this.lblLNatureSinistre.Size = new System.Drawing.Size(36, 20);
             this.lblLNatureSinistre.TabIndex = 4;
             this.lblLNatureSinistre.Text = "--> ";
             // 
@@ -103,18 +120,20 @@
             this.pbAlarme.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pbAlarme.Image = ((System.Drawing.Image)(resources.GetObject("pbAlarme.Image")));
-            this.pbAlarme.Location = new System.Drawing.Point(8, 32);
+            this.pbAlarme.InitialImage = null;
+            this.pbAlarme.Location = new System.Drawing.Point(17, 41);
             this.pbAlarme.Name = "pbAlarme";
-            this.pbAlarme.Size = new System.Drawing.Size(90, 90);
+            this.pbAlarme.Size = new System.Drawing.Size(60, 60);
             this.pbAlarme.TabIndex = 3;
             this.pbAlarme.TabStop = false;
             // 
             // lblCaserne
             // 
             this.lblCaserne.AutoSize = true;
+            this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCaserne.Location = new System.Drawing.Point(492, 9);
             this.lblCaserne.Name = "lblCaserne";
-            this.lblCaserne.Size = new System.Drawing.Size(81, 20);
+            this.lblCaserne.Size = new System.Drawing.Size(91, 20);
             this.lblCaserne.TabIndex = 2;
             this.lblCaserne.Text = "Caserne : ";
             // 
@@ -169,5 +188,6 @@
         private System.Windows.Forms.Label lblLNatureSinistre;
         private System.Windows.Forms.Button btnGenererPDF;
         private System.Windows.Forms.Button btnInfos;
+        private System.Windows.Forms.Button btnCloturerMission;
     }
 }
