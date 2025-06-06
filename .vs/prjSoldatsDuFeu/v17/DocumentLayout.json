@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmstatistiques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmstatistiques.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmenginenregistre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmenginenregistre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmstatistiques.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmstatistiques.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,45 +26,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmStatistiques.resx",
-              "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.resx",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmStatistiques.resx",
-              "ToolTip": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.resx",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmStatistiques.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-03T14:02:11.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmStatistiques.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.Designer.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmStatistiques.Designer.cs",
-              "ToolTip": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.Designer.cs",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmStatistiques.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:02:03.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "frmEnginEnregistre.cs",
               "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmEnginEnregistre.cs",
               "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmEnginEnregistre.cs",
               "ToolTip": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmEnginEnregistre.cs",
               "RelativeToolTip": "prjSoldatsDuFeu\\frmEnginEnregistre.cs",
-              "ViewState": "AQIAABkAAADAMjMzMzMZwBEAAAAMAAAA",
+              "ViewState": "AQIAABIAAABAMzMzMzMrwCUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T14:00:16.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\Form1.cs",
               "RelativeDocumentMoniker": "prjSoldatsDuFeu\\Form1.cs",
