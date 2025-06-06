@@ -15,7 +15,6 @@ namespace prjSoldatsDuFeu
     public partial class frmEnginEnregistre : Form
     {
         
-        int index = 0; // index des lignes de dsEngin
         BindingSource bs1 = new BindingSource();
 
         public frmEnginEnregistre()

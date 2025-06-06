@@ -111,11 +111,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connexion.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frmStatistiques.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmStatistiques.Designer.cs">
+      <DependentUpon>frmStatistiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTableauDeBord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTableauDeBord.Designer.cs">
+      <DependentUpon>frmTableauDeBord.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEnginEnregistre.cs">
       <SubType>Form</SubType>
@@ -123,20 +129,18 @@
     <Compile Include="frmEnginEnregistre.Designer.cs">
       <DependentUpon>frmEnginEnregistre.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmStatistiques.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmStatistiques.Designer.cs" />
     <Compile Include="mesDatas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmStatistiques.resx">
+      <DependentUpon>frmStatistiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTableauDeBord.resx">
+      <DependentUpon>frmTableauDeBord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEnginEnregistre.resx">
       <DependentUpon>frmEnginEnregistre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStatistiques.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

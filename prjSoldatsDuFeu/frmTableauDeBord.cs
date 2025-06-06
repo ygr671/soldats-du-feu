@@ -355,7 +355,7 @@ namespace prjSoldatsDuFeu
 
         private void btnStatistiques_Click(object sender, EventArgs e)
         {
-            Form frmStatistiques = new FrmStatistiques();
+            Form frmStatistiques = new frmStatistiques();
             frmStatistiques.ShowDialog();
         }
     }

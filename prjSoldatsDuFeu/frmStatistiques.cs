@@ -14,20 +14,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace prjSoldatsDuFeu
 {
-    public partial class FrmStatistiques : Form
+    public partial class frmStatistiques : Form
     {
         private SQLiteConnection cx;
         private DataSet ds;
-        private SQLiteDataAdapter da;
         private bool isLoading = true;
-        public FrmStatistiques()
+        public frmStatistiques()
         {
             this.cx = Connexion.Connec;
             this.ds = MesDatas.DsGlobal;
             InitializeComponent();
         }
 
-        private void FrmStatistiques_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             cboCaserne.Items.Add("choisir une caserne");
             cboCaserne.SelectedIndex = 0;
@@ -50,7 +49,7 @@ namespace prjSoldatsDuFeu
             }
 
             pnlCaserne.Visible = false;
-            string[] requeteCaserne = {"Information sur ","Engins les plus utilisés", "Cumul d’utilisation"};
+            string[] requeteCaserne = {"Informations","Engins les plus utilisés", "Cumul d’utilisation"};
             
             
             
@@ -58,12 +57,12 @@ namespace prjSoldatsDuFeu
             cboRequeteParCaserne.SelectedIndex = 0;
 
 
-            string[] requeteGlobale = { "Stat global ", "Nombre d’interventions par type de sinistre", "Habilitations les plus sollicitées", "Liste des pompiers par habilitation" };
+            string[] requeteGlobale = { "Statistiques globales", "Nombre d’interventions par type de sinistre", "Habilitations les plus sollicitées", "Liste des pompiers par habilitation" };
 
-            cboStatGlobal.Items.AddRange (requeteGlobale);
-            cboStatGlobal.SelectedIndex = 0;
+            cboStatistiquesGlobales.Items.AddRange (requeteGlobale);
+            cboStatistiquesGlobales.SelectedIndex = 0;
 
-            cboHabilitation.Items.Add("choisir habilitation");
+            cboHabilitation.Items.Add("Habilitations");
             String sql2 = "SELECT libelle FROM Habilitation ORDER BY id";
             try
             {
@@ -83,7 +82,7 @@ namespace prjSoldatsDuFeu
             cboHabilitation.SelectedIndex = 0;
 
 
-            cboTypeSinistre.Items.Add("choisir type sinistre");
+            cboTypeSinistre.Items.Add("Nature de sinistre");
             String sql3 = "SELECT libelle FROM NatureSinistre ORDER BY id";
             try
             {
@@ -110,15 +109,10 @@ namespace prjSoldatsDuFeu
 
         }
 
-        private void cboRequeteCaserne_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-
         private void cboCaserne_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (isLoading) return;
+            cboRequeteParCaserne.Visible = true;
             pnlCaserne.Visible = true;
             int y = 25;
             pnlCaserne.Controls.Clear();
@@ -240,9 +234,16 @@ namespace prjSoldatsDuFeu
         private void cboRequeteParCaserne_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (isLoading) return;
+            lblStatistiquesGlobales.Visible = true;
+            cboStatistiquesGlobales.Visible = true;
             int y = 25;
             pnlCaserne.Visible = true;
             pnlCaserne.Controls.Clear();
+            if (cboRequeteParCaserne.SelectedIndex == 0)
+            {
+                lblStatistiquesGlobales.Visible = false;
+                cboStatistiquesGlobales.Visible = false;
+            }
             if (cboRequeteParCaserne.SelectedIndex == 1)
             {
                 string sql = "SELECT codeTypeEngin, numeroEngin, COUNT(*) FROM PartirAvec WHERE idCaserne = " + cboCaserne.SelectedIndex + " GROUP BY idCaserne, codeTypeEngin, numeroEngin;";
@@ -363,7 +364,11 @@ namespace prjSoldatsDuFeu
 
             
             int y = 20;
-            if (cboStatGlobal.SelectedIndex == 1)
+            if (cboStatistiquesGlobales.SelectedIndex == 0)
+            {
+                pnlGlobal.Visible = false;
+            }
+            if (cboStatistiquesGlobales.SelectedIndex == 1)
             {
                 cboTypeSinistre.SelectedIndex = 0;
                 cboTypeSinistre.Visible =  true;
@@ -373,7 +378,7 @@ namespace prjSoldatsDuFeu
             {
                 cboTypeSinistre.Visible = false;
             }
-            if (cboStatGlobal.SelectedIndex == 3)
+            if (cboStatistiquesGlobales.SelectedIndex == 3)
             {
                 cboHabilitation.SelectedIndex = 0;
                 cboHabilitation.Visible = true;
@@ -383,7 +388,7 @@ namespace prjSoldatsDuFeu
             {
                 cboHabilitation.Visible = false;
             }
-            if(cboStatGlobal.SelectedIndex == 2)
+            if(cboStatistiquesGlobales.SelectedIndex == 2)
             {
                 pnlGlobal.Visible = true;
                 String sql = "SELECT h.libelle, COUNT(*) FROM Mobiliser m JOIN Habilitation h ON m.idHabilitation=h.id GROUP BY m.idHabilitation ORDER BY  COUNT(*) DESC";
