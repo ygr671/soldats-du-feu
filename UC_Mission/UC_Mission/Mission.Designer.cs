@@ -70,6 +70,7 @@
             this.btnCloturerMission.Size = new System.Drawing.Size(30, 30);
             this.btnCloturerMission.TabIndex = 10;
             this.btnCloturerMission.UseVisualStyleBackColor = true;
+            this.btnCloturerMission.Click += new System.EventHandler(this.btnCloturerMission_Click);
             // 
             // btnInfos
             // 
@@ -101,7 +102,7 @@
             this.lblMotifAppel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMotifAppel.Location = new System.Drawing.Point(492, 65);
             this.lblMotifAppel.Name = "lblMotifAppel";
-            this.lblMotifAppel.Size = new System.Drawing.Size(36, 20);
+            this.lblMotifAppel.Size = new System.Drawing.Size(53, 29);
             this.lblMotifAppel.TabIndex = 5;
             this.lblMotifAppel.Text = "--> ";
             // 
@@ -111,7 +112,7 @@
             this.lblLNatureSinistre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLNatureSinistre.Location = new System.Drawing.Point(140, 65);
             this.lblLNatureSinistre.Name = "lblLNatureSinistre";
-            this.lblLNatureSinistre.Size = new System.Drawing.Size(36, 20);
+            this.lblLNatureSinistre.Size = new System.Drawing.Size(53, 29);
             this.lblLNatureSinistre.TabIndex = 4;
             this.lblLNatureSinistre.Text = "--> ";
             // 
@@ -133,7 +134,7 @@
             this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCaserne.Location = new System.Drawing.Point(492, 9);
             this.lblCaserne.Name = "lblCaserne";
-            this.lblCaserne.Size = new System.Drawing.Size(91, 20);
+            this.lblCaserne.Size = new System.Drawing.Size(132, 29);
             this.lblCaserne.TabIndex = 2;
             this.lblCaserne.Text = "Caserne : ";
             // 
@@ -142,7 +143,7 @@
             this.lblDateDebut.AutoSize = true;
             this.lblDateDebut.Location = new System.Drawing.Point(140, 9);
             this.lblDateDebut.Name = "lblDateDebut";
-            this.lblDateDebut.Size = new System.Drawing.Size(73, 20);
+            this.lblDateDebut.Size = new System.Drawing.Size(109, 29);
             this.lblDateDebut.TabIndex = 1;
             this.lblDateDebut.Text = "Début le ";
             // 
@@ -154,13 +155,13 @@
             this.lblID.Location = new System.Drawing.Point(4, 9);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(95, 20);
+            this.lblID.Size = new System.Drawing.Size(143, 29);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID Mission : ";
             // 
             // Mission
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;

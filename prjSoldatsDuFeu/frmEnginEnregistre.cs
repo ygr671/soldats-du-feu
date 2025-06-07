@@ -76,8 +76,6 @@ namespace prjSoldatsDuFeu
                         row["imageObject"] = null;
                     }
                 }
-                //pour afficher dsEngin, a supprimmer quand le volet est fini
-                dgvTest.DataSource = MesDatas.DsGlobal.Tables["TableDsEngin"];
 
                     // MessageBox.Show("Requete apres fill : " + req);
                     // MessageBox.Show("\ndsEngin rows : " + MesDatas.DsGlobal.Tables["TableDsEngin"].Rows.Count.ToString());

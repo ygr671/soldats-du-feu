@@ -24,8 +24,46 @@ namespace prjSoldatsDuFeu
         public void AfficherDetailsMission(object sender, EventArgs e)
         {
             Mission mission = (Mission)sender;
-            MessageBox.Show("Mission n°" + mission.Id);
+
+            var tableMissions = MesDatas.DsGlobal.Tables["Mission"];
+            var tableNatureSinistre = MesDatas.DsGlobal.Tables["NatureSinistre"];
+            var tableCasernes = MesDatas.DsGlobal.Tables["Caserne"];
+
+            DataRow[] resultatMission = tableMissions.Select("id = " + mission.Id);
+            if (resultatMission.Length == 0)
+            {
+                MessageBox.Show($"Mission {mission.Id} introuvable.");
+                return;
+            }
+
+            DataRow ligneMission = resultatMission[0];
+
+            // Données de base
+            DateTime dateHeureDepart = Convert.ToDateTime(ligneMission["dateHeureDepart"]);
+            string dateHeureRetourStr = ligneMission["dateHeureRetour"] == DBNull.Value ? "En cours" : Convert.ToDateTime(ligneMission["dateHeureRetour"]).ToString("dd-MM-yyyy 'à' HH'h'mm");
+            string motifAppel = ligneMission["motifAppel"].ToString();
+            string adresseMission = ligneMission["adresse"].ToString();
+            string compteRenduMission = ligneMission["compteRendu"].ToString();
+            int idCaserneMission = Convert.ToInt32(ligneMission["idCaserne"]);
+            int idNatureSinistreMission = Convert.ToInt32(ligneMission["idNatureSinistre"]);
+
+            string libelleSinistre = tableNatureSinistre.Select("id = " + idNatureSinistreMission).FirstOrDefault()?["libelle"]?.ToString() ?? "Inconnu";
+            string nomCaserne = tableCasernes.Select("id = " + idCaserneMission).FirstOrDefault()?["nom"]?.ToString() ?? "Inconnue";
+
+            // Création du texte à afficher
+            string details = $"📋 **Détails de la mission n°{mission.Id}**\n\n" +
+                             $"🕒 Déclenchée le : {dateHeureDepart:dd-MM-yyyy 'à' HH'h'mm}\n" +
+                             $"🔚 Retour le : {dateHeureRetourStr}\n" +
+                             $"🏷️ Type de sinistre : {libelleSinistre}\n" +
+                             $"📌 Motif : {motifAppel}\n" +
+                             $"📍 Adresse : {adresseMission}\n" +
+                             $"🏠 Caserne : {nomCaserne}\n" +
+                             $"📝 Compte-rendu : {compteRenduMission}";
+
+            // Affichage
+            MessageBox.Show(details, $"Mission n°{mission.Id}", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
 
         private void GenererPDF(object sender, EventArgs e)
         {
@@ -208,6 +246,8 @@ namespace prjSoldatsDuFeu
 
         public void RemplirMission()
         {
+            flpnlTDB.Controls.Clear(); // On vide le flow panel avant de le remplir à nouveau
+
             int id_mission = -1;
             int state_mission = -1;
             string motif = "";
@@ -215,6 +255,7 @@ namespace prjSoldatsDuFeu
             string nature_sinistre = "";
             string caserne = "";
 
+            // Missions en cours
             if (chkEnCours.Checked)
             {
                 foreach (DataRow dr in MesDatas.DsGlobal.Tables["Mission"].Rows)
@@ -257,13 +298,15 @@ namespace prjSoldatsDuFeu
                         m.Tag = id_mission;
                         m.afficherInformations = AfficherDetailsMission;
                         m.generateur = GenererPDF;
+                        m.cloturerMission = CloturerMission;
                         m.Motif = motif;
                         m.Sinistre = nature_sinistre;
-                        m.EtatBoutonCloture = false;
+                        m.EtatBoutonCloture = true;
                         flpnlTDB.Controls.Add(m);
                     }
                 }
             }
+            // Missions terminées
             else
             {
                 foreach (DataRow dr in MesDatas.DsGlobal.Tables["Mission"].Rows)
@@ -309,11 +352,27 @@ namespace prjSoldatsDuFeu
                     Mission m = new Mission(id_mission, date_non_formatee, caserne, nature_sinistre, motif);
                     m.Tag = id_mission;
                     m.afficherInformations = AfficherDetailsMission;
+                    m.cloturerMission = CloturerMission;
                     m.generateur = GenererPDF;
-                    m.EtatBoutonCloture = true;
+                    m.EtatBoutonCloture = false;
                     flpnlTDB.Controls.Add(m);
                 }
             }
+        }
+
+        private void CloturerMission(object sender, EventArgs e)
+        {
+            Mission mission = (Mission)sender;
+            // Cloture de la mission dans le dataset
+            DataTable tableMission = MesDatas.DsGlobal.Tables["Mission"];
+
+            DataRow[] lignes = MesDatas.DsGlobal.Tables["Mission"].Select($"id = {mission.Id}");
+            if (lignes.Length > 0)
+            {
+                lignes[0]["terminee"] = 1;
+            }
+            MessageBox.Show("Mission n°" + mission.Id + " clôturée avec succès.", "Clôture de mission", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            RemplirMission();
         }
 
         public frmTableauDeBord()
@@ -338,7 +397,6 @@ namespace prjSoldatsDuFeu
 
         private void chkEnCours_CheckedChanged(object sender, EventArgs e)
         {
-            flpnlTDB.Controls.Clear(); // On vide le flow panel avant de le remplir à nouveau
             RemplirMission();
         }
 

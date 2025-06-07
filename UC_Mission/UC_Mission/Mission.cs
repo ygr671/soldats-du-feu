@@ -86,5 +86,13 @@ namespace UC_Mission
                 this.afficherInformations(this, e); // Remplacement the sender par this pour passer le formulaire au lieu du bouton
             }
         }
+
+        private void btnCloturerMission_Click(object sender, EventArgs e)
+        {
+            if (this.cloturerMission != null)
+            {
+                this.cloturerMission(this, e); // Remplacement the sender par this pour passer le formulaire au lieu du bouton
+            }
+        }
     }
 }

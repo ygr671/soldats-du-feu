@@ -3,23 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmstatistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmstatistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmstatistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmstatistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmenginenregistre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmenginenregistre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -39,57 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmStatistiques.cs",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmStatistiques.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.cs",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmStatistiques.cs",
-              "ViewState": "AgIAAGIBAAAAAAAAAAAmwHABAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T14:38:08.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmStatistiques.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmStatistiques.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.cs [Design]",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmStatistiques.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T14:25:59.584Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "frmTableauDeBord.cs",
               "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
               "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
               "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
               "RelativeToolTip": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "ViewState": "AgIAAGEBAAAAAAAAAAAcwGcBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T14:20:50.389Z",
+              "WhenOpened": "2025-06-07T11:50:52.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmEnginEnregistre.cs",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmEnginEnregistre.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmEnginEnregistre.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmEnginEnregistre.cs",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmEnginEnregistre.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:00:16.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "frmTableauDeBord.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
               "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
