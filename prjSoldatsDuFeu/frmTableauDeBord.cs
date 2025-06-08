@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UC_Mission;
+using System.Data.SqlClient;
 
 namespace prjSoldatsDuFeu
 {
@@ -43,7 +44,7 @@ namespace prjSoldatsDuFeu
             string dateHeureRetourStr = ligneMission["dateHeureRetour"] == DBNull.Value ? "En cours" : Convert.ToDateTime(ligneMission["dateHeureRetour"]).ToString("dd-MM-yyyy 'à' HH'h'mm");
             string motifAppel = ligneMission["motifAppel"].ToString();
             string adresseMission = ligneMission["adresse"].ToString();
-            string compteRenduMission = ligneMission["compteRendu"].ToString();
+            string compteRenduMission = (ligneMission["compteRendu"].ToString().Length != 0) ? ligneMission["compteRendu"].ToString() : "Compte rendu de mission vide.";
             int idCaserneMission = Convert.ToInt32(ligneMission["idCaserne"]);
             int idNatureSinistreMission = Convert.ToInt32(ligneMission["idNatureSinistre"]);
 
@@ -111,10 +112,10 @@ namespace prjSoldatsDuFeu
 
                     // Données principales
                     DateTime dateHeureDepart = Convert.ToDateTime(ligneMission["dateHeureDepart"]);
-                    string dateHeureRetourStr = ligneMission["dateHeureRetour"] == DBNull.Value ? "En cours" : Convert.ToDateTime(ligneMission["dateHeureRetour"]).ToString("dd-MM-yyyy 'à' HH'h'mm");
+                    string dateHeureRetourStr = ligneMission["dateHeureRetour"] == DBNull.Value ? ": en cours" : Convert.ToDateTime(ligneMission["dateHeureRetour"]).ToString("dd-MM-yyyy 'à' HH'h'mm");
                     string motifAppel = ligneMission["motifAppel"].ToString();
                     string adresseMission = ligneMission["adresse"].ToString();
-                    string compteRenduMission = ligneMission["compteRendu"].ToString();
+                    string compteRenduMission = (ligneMission["compteRendu"].ToString().Length != 0) ? ligneMission["compteRendu"].ToString() : "Compte rendu de mission vide.";
                     int idCaserneMission = Convert.ToInt32(ligneMission["idCaserne"]);
                     int idNatureSinistreMission = Convert.ToInt32(ligneMission["idNatureSinistre"]);
 
@@ -371,6 +372,36 @@ namespace prjSoldatsDuFeu
             {
                 lignes[0]["terminee"] = 1;
             }
+
+            SQLiteTransaction transaction = null;
+            try
+            {
+                // Démarrage de la transaction
+                transaction = cx.BeginTransaction();
+
+                // Requête SQL
+                string req = "UPDATE Mission SET terminee = 1 WHERE id = " + mission.Id + ";";
+
+                // Création de la commande et affectation de la transaction
+                SQLiteCommand cmd = new SQLiteCommand(req, cx);
+                cmd.Transaction = transaction;
+
+                // Exécution de la commande
+                cmd.ExecuteNonQuery();
+
+                // Validation de la transaction
+                transaction.Commit();
+            }
+            catch (Exception err)
+            {
+                // Annulation si erreur
+                if (transaction != null)
+                    transaction.Rollback();
+
+                MessageBox.Show("Erreur : " + err.Message);
+            }
+
+
             MessageBox.Show("Mission n°" + mission.Id + " clôturée avec succès.", "Clôture de mission", MessageBoxButtons.OK, MessageBoxIcon.Information);
             RemplirMission();
         }
@@ -415,6 +446,11 @@ namespace prjSoldatsDuFeu
         {
             Form frmStatistiques = new frmStatistiques();
             frmStatistiques.ShowDialog();
+        }
+
+        private void btnCreerMission_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

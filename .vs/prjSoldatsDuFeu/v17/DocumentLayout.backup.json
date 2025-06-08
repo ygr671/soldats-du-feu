@@ -7,8 +7,24 @@
       "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\uc_creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\uc_creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmcreermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmcreermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmcreermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmcreermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\uc_creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\uc_creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +34,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmCreerMission.cs",
+              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmCreerMission.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmCreerMission.cs",
+              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmCreerMission.cs",
+              "RelativeToolTip": "prjSoldatsDuFeu\\frmCreerMission.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAvwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:17:18.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmCreerMission.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmCreerMission.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmCreerMission.cs",
+              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmCreerMission.cs [Design]",
+              "RelativeToolTip": "prjSoldatsDuFeu\\frmCreerMission.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:17:04.976Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UC_CreerMission.cs",
+              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\UC_CreerMission.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\UC_CreerMission.cs",
+              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\UC_CreerMission.cs",
+              "RelativeToolTip": "prjSoldatsDuFeu\\UC_CreerMission.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAAUwDkBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:14:03.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,14 +86,26 @@
               "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
               "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
               "RelativeToolTip": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALsBAAAAAAAAAAAvwMQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T11:50:52.554Z",
+              "WhenOpened": "2025-06-08T15:16:30.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "UC_CreerMission.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\UC_CreerMission.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\UC_CreerMission.cs",
+              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\UC_CreerMission.cs [Design]",
+              "RelativeToolTip": "prjSoldatsDuFeu\\UC_CreerMission.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:13:35.107Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frmTableauDeBord.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
               "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmTableauDeBord.cs",

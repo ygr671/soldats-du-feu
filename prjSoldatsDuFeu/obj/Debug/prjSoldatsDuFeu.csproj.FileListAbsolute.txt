@@ -135,3 +135,5 @@ C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\pr
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UC_Mission.dll
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UC_Mission.pdb
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmStatistiques.resources
+C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.UC_CreerMission.resources
+C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmCreerMission.resources

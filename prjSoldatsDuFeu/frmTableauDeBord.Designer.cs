@@ -34,7 +34,7 @@
             this.btnQuitter = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnGestionEngins = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCreerMission = new System.Windows.Forms.Button();
             this.btnTableauDeBord = new System.Windows.Forms.Button();
             this.pnlTableauDeBord = new System.Windows.Forms.Panel();
             this.chkEnCours = new System.Windows.Forms.CheckBox();
@@ -51,7 +51,7 @@
             this.pnlBoutonsNavigation.Controls.Add(this.btnQuitter);
             this.pnlBoutonsNavigation.Controls.Add(this.button3);
             this.pnlBoutonsNavigation.Controls.Add(this.btnGestionEngins);
-            this.pnlBoutonsNavigation.Controls.Add(this.button1);
+            this.pnlBoutonsNavigation.Controls.Add(this.btnCreerMission);
             this.pnlBoutonsNavigation.Controls.Add(this.btnTableauDeBord);
             this.pnlBoutonsNavigation.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlBoutonsNavigation.Location = new System.Drawing.Point(0, 0);
@@ -105,16 +105,17 @@
             this.btnGestionEngins.UseVisualStyleBackColor = true;
             this.btnGestionEngins.Click += new System.EventHandler(this.btnGestionEngins_Click);
             // 
-            // button1
+            // btnCreerMission
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(4, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 60);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCreerMission.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCreerMission.BackgroundImage")));
+            this.btnCreerMission.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCreerMission.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCreerMission.Location = new System.Drawing.Point(4, 69);
+            this.btnCreerMission.Name = "btnCreerMission";
+            this.btnCreerMission.Size = new System.Drawing.Size(60, 60);
+            this.btnCreerMission.TabIndex = 10;
+            this.btnCreerMission.UseVisualStyleBackColor = true;
+            this.btnCreerMission.Click += new System.EventHandler(this.btnCreerMission_Click);
             // 
             // btnTableauDeBord
             // 
@@ -198,7 +199,7 @@
         private System.Windows.Forms.Button btnTableauDeBord;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnGestionEngins;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCreerMission;
         private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.Button btnStatistiques;
     }
