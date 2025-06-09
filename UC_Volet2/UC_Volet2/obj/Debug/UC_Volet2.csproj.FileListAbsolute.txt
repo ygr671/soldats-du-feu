@@ -1,4 +1,0 @@
-C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\UC_Volet2\UC_Volet2\obj\Debug\UC_Volet2.csproj.AssemblyReference.cache
-C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\UC_Volet2\UC_Volet2\obj\Debug\prjSoldatsDuFeu.UC_CreerMission.resources
-C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\UC_Volet2\UC_Volet2\obj\Debug\UC_Volet2.csproj.GenerateResource.cache
-C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\UC_Volet2\UC_Volet2\obj\Debug\UC_Volet2.csproj.CoreCompileInputs.cache

@@ -450,7 +450,11 @@ namespace prjSoldatsDuFeu
 
         private void btnCreerMission_Click(object sender, EventArgs e)
         {
-
+            Form frmMission = new frmNewMission();
+            frmMission.ShowDialog();
+            MesDatas.DsGlobal.Clear();
+            FillDataSet(this.cx, MesDatas.DsGlobal);
+            RemplirMission();
         }
     }
 }
