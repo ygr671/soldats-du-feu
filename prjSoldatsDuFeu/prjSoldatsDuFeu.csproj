@@ -108,9 +108,18 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\UC_Mission\UC_Mission\bin\Debug\UC_Mission.dll</HintPath>
     </Reference>
+    <Reference Include="UserControlExemple">
+      <HintPath>..\UC_Login\UserControlExemple\bin\Debug\UserControlExemple.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connexion.cs" />
+    <Compile Include="frmGestionPompiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionPompiers.Designer.cs">
+      <DependentUpon>frmGestionPompiers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNewMission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,8 +145,17 @@
       <DependentUpon>frmEnginEnregistre.cs</DependentUpon>
     </Compile>
     <Compile Include="mesDatas.cs" />
+    <Compile Include="frmNouveauPompier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNouveauPompier.Designer.cs">
+      <DependentUpon>frmNouveauPompier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGestionPompiers.resx">
+      <DependentUpon>frmGestionPompiers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNewMission.resx">
       <DependentUpon>frmNewMission.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEnginEnregistre.resx">
       <DependentUpon>frmEnginEnregistre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNouveauPompier.resx">
+      <DependentUpon>frmNouveauPompier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,0 +1,8 @@
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\bin\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\bin\Debug\UserControlExemple.pdb
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.csproj.AssemblyReference.cache
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.csproj.GenerateResource.cache
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.csproj.CoreCompileInputs.cache
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.pdb
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.loginForm.resources

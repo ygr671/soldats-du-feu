@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\",
+  "WorkspaceRootPath": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmgestionpompiers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmgestionpompiers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmnewmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmnewmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|c:\\users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmgestionpompiers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmgestionpompiers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmgestionpompiers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmgestionpompiers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmnewmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmnewmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmtableaudebord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjsoldatsdufeu\\frmstatistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{82B2EF27-E95B-444F-847D-AFA36840B844}|prjSoldatsDuFeu\\prjSoldatsDuFeu.csproj|solutionrelative:prjsoldatsdufeu\\frmstatistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,62 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmNewMission.cs",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmNewMission.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmNewMission.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmNewMission.cs",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmNewMission.cs",
-              "ViewState": "AgIAADUBAAAAAAAAAAAYwEYBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "frmGestionPompiers.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmGestionPompiers.Designer.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmGestionPompiers.Designer.cs",
+              "ToolTip": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmGestionPompiers.Designer.cs",
+              "RelativeToolTip": "prjSoldatsDuFeu\\frmGestionPompiers.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T19:20:19.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmNewMission.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmNewMission.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmNewMission.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmNewMission.cs [Design]",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmNewMission.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T19:20:02.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmTableauDeBord.cs",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "ViewState": "AgIAAMIBAAAAAAAAAAA/wMgBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:16:30.191Z",
+              "WhenOpened": "2025-06-10T10:01:59.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Connexion.cs",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\Connexion.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\Connexion.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\Connexion.cs",
-              "RelativeToolTip": "prjSoldatsDuFeu\\Connexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "frmGestionPompiers.cs",
+              "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmGestionPompiers.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmGestionPompiers.cs",
+              "ToolTip": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmGestionPompiers.cs",
+              "RelativeToolTip": "prjSoldatsDuFeu\\frmGestionPompiers.cs",
+              "ViewState": "AQIAAL4AAAAAAAAAAADgv9cAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T19:33:14.23Z"
+              "WhenOpened": "2025-06-10T09:34:40.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmTableauDeBord.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmTableauDeBord.cs",
-              "ToolTip": "C:\\Users\\Muzu\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmTableauDeBord.cs [Design]",
-              "RelativeToolTip": "prjSoldatsDuFeu\\frmTableauDeBord.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "frmGestionPompiers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmGestionPompiers.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmGestionPompiers.cs",
+              "ToolTip": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmGestionPompiers.cs [Design]",
+              "RelativeToolTip": "prjSoldatsDuFeu\\frmGestionPompiers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T07:18:32.809Z"
+              "WhenOpened": "2025-06-10T09:37:44.279Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmStatistiques.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.cs",
+              "RelativeDocumentMoniker": "prjSoldatsDuFeu\\frmStatistiques.cs",
+              "ToolTip": "C:\\Users\\m.erdal\\source\\repos\\ygr671\\soldats-du-feu\\prjSoldatsDuFeu\\frmStatistiques.cs [Design]",
+              "RelativeToolTip": "prjSoldatsDuFeu\\frmStatistiques.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T09:32:55.19Z"
             }
           ]
         }

@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\UC_Volet2",
-    "\\UC_Volet2\\UC_Volet2"
+    "\\prjSoldatsDuFeu",
+    "\\UC_Login",
+    "\\UC_Login\\testUCPersonneLogin"
   ],
-  "SelectedNode": "\\UC_Volet2\\UC_Volet2\\UC_CreerMission.cs",
+  "SelectedNode": "\\UC_Login\\testUCPersonneLogin\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -92,6 +92,7 @@
             this.button3.Size = new System.Drawing.Size(60, 60);
             this.button3.TabIndex = 12;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnGestionEngins
             // 
@@ -144,7 +145,7 @@
             this.chkEnCours.AutoSize = true;
             this.chkEnCours.Location = new System.Drawing.Point(42, 18);
             this.chkEnCours.Name = "chkEnCours";
-            this.chkEnCours.Size = new System.Drawing.Size(133, 33);
+            this.chkEnCours.Size = new System.Drawing.Size(91, 24);
             this.chkEnCours.TabIndex = 2;
             this.chkEnCours.Text = "En cours";
             this.chkEnCours.UseVisualStyleBackColor = true;
@@ -164,13 +165,13 @@
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitre.Location = new System.Drawing.Point(470, 11);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(279, 40);
+            this.lblTitre.Size = new System.Drawing.Size(192, 29);
             this.lblTitre.TabIndex = 0;
             this.lblTitre.Text = "Tableau de bord";
             // 
             // frmTableauDeBord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.pnlTableauDeBord);

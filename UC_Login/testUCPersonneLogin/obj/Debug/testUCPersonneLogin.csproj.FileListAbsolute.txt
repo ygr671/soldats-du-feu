@@ -1,0 +1,13 @@
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\bin\Debug\testUCPersonneLogin.exe.config
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\bin\Debug\testUCPersonneLogin.exe
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\bin\Debug\testUCPersonneLogin.pdb
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\bin\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\bin\Debug\UserControlExemple.pdb
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPersonneLogin.csproj.AssemblyReference.cache
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPersonneLogin.Form1.resources
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPersonneLogin.Properties.Resources.resources
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPersonneLogin.csproj.GenerateResource.cache
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPersonneLogin.csproj.CoreCompileInputs.cache
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPe.63CC02D8.Up2Date
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPersonneLogin.exe
+C:\Users\m.erdal\source\repos\testUCPersonneLogin\testUCPersonneLogin\obj\Debug\testUCPersonneLogin.pdb

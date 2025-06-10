@@ -136,3 +136,8 @@ C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UC_Mi
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UC_Mission.pdb
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmStatistiques.resources
 C:\Users\Muzu\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmNewMission.resources
+C:\Users\m.erdal\Source\Repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmNewMission.resources
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmGestionPompiers.resources
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\obj\Debug\prjSoldatsDuFeu.frmNouveauPompier.resources
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\prjSoldatsDuFeu\bin\Debug\UserControlExemple.pdb

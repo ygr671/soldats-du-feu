@@ -456,5 +456,11 @@ namespace prjSoldatsDuFeu
             FillDataSet(this.cx, MesDatas.DsGlobal);
             RemplirMission();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form frmPompiers = new frmGestionPompiers();
+            frmPompiers.ShowDialog();
+        }
     }
 }

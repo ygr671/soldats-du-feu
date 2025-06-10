@@ -1,0 +1,16 @@
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\bin\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\bin\Debug\UserControlExemple.pdb
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UC_Login.csproj.AssemblyReference.cache
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\prjSoldatsDuFeu.loginForm.resources
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UC_Login.csproj.GenerateResource.cache
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UC_Login.csproj.CoreCompileInputs.cache
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\UserControlExemple\UserControlExemple\obj\Debug\UserControlExemple.pdb
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\bin\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\bin\Debug\UserControlExemple.pdb
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\obj\Debug\UC_Login.csproj.AssemblyReference.cache
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\obj\Debug\prjSoldatsDuFeu.loginForm.resources
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\obj\Debug\UC_Login.csproj.GenerateResource.cache
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\obj\Debug\UC_Login.csproj.CoreCompileInputs.cache
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\obj\Debug\UserControlExemple.dll
+C:\Users\m.erdal\source\repos\ygr671\soldats-du-feu\UC_Login\UserControlExemple\obj\Debug\UserControlExemple.pdb
